@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    student_name = os.getenv('STUDENT_NAME', 'Anatoly Kadin')
+    student_name = os.getenv('STUDENT_NAME', 'Anatoly Kadin test webhook')
     return f'Hello, {student_name}!'
 
 if __name__ == '__main__':
